@@ -15,11 +15,9 @@ if ($_GET['id'] !== null && is_numeric($_GET['id'])) {
         $noteToUpdate->updateNote($noteRetrieved->id);
         
         header('location: index.php?message=true');
-    } else {
-        // header('location: index.php?status=error');
     }
 } else {
-    // header('location: index.php?status=error');
+    header('location: index.php?message=false');
 }
 
 include __DIR__ . '/includes/header.php';

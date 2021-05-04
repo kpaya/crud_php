@@ -16,14 +16,14 @@
             <div class="form-row mb-3">
               <div class="form-group col-md-6">
                 <label for="titleInput">Título</label>
-                <input type="text" class="form-control" name="titleNote" id="titleInput" value="<?= isset($noteRetrieved->title) ? $noteRetrieved->title : '' ?>" required <?= PAGE == 'show' ? "readonly" : '';?>>
+                <input type="text" class="form-control" name="titleNote" id="titleInput" value="<?= isset($noteRetrieved->title) ? $noteRetrieved->title : '' ?>" required <?= PAGE == 'show' ? "readonly" : ''; ?>>
               </div>
             </div>
 
             <div class="form-row mb-3">
               <div class="form-group col-md">
                 <label for="descriptionArea">Descrição</label>
-                <textarea class="form-control" placeholder="Preencha sua anotação aqui" name="descriptionNote" id="descriptionArea" <?= PAGE == 'show' ? "readonly" : '';?> style="height: 100px"><?= isset($noteRetrieved->description) ? $noteRetrieved->description : '' ?></textarea>
+                <textarea class="form-control" placeholder="Preencha sua anotação aqui" name="descriptionNote" id="descriptionArea" <?= PAGE == 'show' ? "readonly" : ''; ?> style="height: 100px"><?= isset($noteRetrieved->description) ? $noteRetrieved->description : '' ?></textarea>
               </div>
             </div>
 
@@ -36,7 +36,7 @@
 
             <div class="row">
               <div class="col-sm-6">
-                <button type="submit" class="btn btn-primary" <?= PAGE == 'show' ? "disabled style='display: none;'" : '';?>>Inserir</button>
+                <button type="submit" class="btn btn-primary" <?= PAGE == 'show' ? "disabled style='display: none;'" : ''; ?>>Inserir</button>
               </div>
               <div class="col-sm-6 text-end">
                 <a href="index.php">

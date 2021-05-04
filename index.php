@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Notes;
+
 include __DIR__ . '/vendor/autoload.php';
 define('PAGETITLE', 'Listagem de Notas');
 
